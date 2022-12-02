@@ -28,6 +28,9 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #CDCDCD;
+    .menu__btn::before {
+      content: none;
+    }
   }
   &__img{
     margin-bottom: 20px;

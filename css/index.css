@@ -633,6 +633,9 @@ header .glb .heart {
   align-items: center;
   border-bottom: 1px solid #CDCDCD;
 }
+.header__row .menu__btn::before {
+  content: none;
+}
 .header__img {
   margin-bottom: 20px;
 }
