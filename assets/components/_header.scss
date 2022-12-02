@@ -31,6 +31,16 @@ header {
   &__img{
     margin-bottom: 20px;
   }
+  &__more{
+    display: flex;
+    margin-top: 42px;
+  }
+  &__arrow{
+     margin: 0px 21px 0px 21px;
+  }
+  &__home{
+    @include font (400, 16px,  #A7A7A7)
+  }
 }
 
 .header__down {
@@ -64,6 +74,63 @@ header {
 
     & p {
       padding-right: 11px;
+    }
+  }
+}
+
+@media screen and (max-width:1130px) {
+  .header{
+    &__more{
+      justify-content: center;
+    }
+  }
+}
+
+
+@media screen and (max-width:697px) {
+  .header{
+    &__more{
+      display: flex;
+      align-items: center;
+    }
+    &__home{
+      max-width: 277px;
+    }
+  }
+}
+
+
+@media screen and (max-width:510px) {
+  .header{
+    &__home{
+      font-size: 14px;
+      max-width: 250px;
+    }
+  }
+}
+@media screen and (max-width:400px) {
+  .header{
+    &__home{
+      font-size: 14px;
+      max-width: 155px;
+    }
+  }
+}
+
+@media screen and (max-width:342px) {
+  .header{
+    &__home{
+      font-size: 11px;
+      max-width: 149px;
+    }
+  }
+}
+
+@media screen and (max-width:320px) {
+  .header{
+    &__home{
+      font-size: 10px;
+      max-width: 111px;
     }
   }
 }

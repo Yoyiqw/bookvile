@@ -619,6 +619,18 @@ header .glb .heart {
 .header__img {
   margin-bottom: 20px;
 }
+.header__more {
+  display: flex;
+  margin-top: 42px;
+}
+.header__arrow {
+  margin: 0px 21px 0px 21px;
+}
+.header__home {
+  font-weight: 400;
+  font-size: 16px;
+  color: #A7A7A7;
+}
 
 .header__down {
   display: flex;
@@ -650,6 +662,44 @@ header .glb .heart {
   padding-right: 11px;
 }
 
+@media screen and (max-width: 1130px) {
+  .header__more {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 697px) {
+  .header__more {
+    display: flex;
+    align-items: center;
+  }
+  .header__home {
+    max-width: 277px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .header__home {
+    font-size: 14px;
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__home {
+    font-size: 14px;
+    max-width: 155px;
+  }
+}
+@media screen and (max-width: 342px) {
+  .header__home {
+    font-size: 11px;
+    max-width: 149px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__home {
+    font-size: 10px;
+    max-width: 111px;
+  }
+}
 .order__content {
   margin-top: 29px;
 }
@@ -992,5 +1042,181 @@ header .glb .heart {
 @media screen and (max-width: 320px) {
   .order__fixed label {
     font-size: 15px;
+  }
+}
+.coop__title {
+  max-width: 668px;
+  margin-top: 35px;
+  font-size: 36px;
+  font-weight: 300;
+}
+.coop__women {
+  margin-top: -80px;
+}
+.coop__information {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 38px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #525252;
+  max-width: 615px;
+  line-height: 25.34px;
+}
+.coop__content {
+  display: flex;
+  justify-content: space-between;
+}
+.coop__photo {
+  display: flex;
+  margin-top: 47px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1206px) {
+  .coop__photo {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1204px) {
+  .coop__photo {
+    max-width: 386px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .coop__fix {
+    margin-bottom: 15px;
+  }
+  .coop__fix_2 {
+    margin-bottom: 15px;
+  }
+  .coop__fix_3 {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .coop__title {
+    margin-top: 20px;
+    padding-top: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .coop__content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .coop__content__information {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .coop__women {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  .coop__description_3 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1136px) {
+  .coop__description_3 {
+    margin-top: 15px;
+  }
+  .coop__description_2 {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .coop__description_3 {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .coop__description_2 {
+    text-align: center;
+  }
+  .coop__description {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 608px) {
+  .coop__description_3 {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .coop__description_2 {
+    text-align: center;
+  }
+  .coop__description_ {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 608px) {
+  .coop__description_3 {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .coop__description {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 548px) {
+  .coop__description_3 {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 526px) {
+  .coop__description_3 {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 442px) {
+  .coop__description_3 {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .coop__description_3 {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .coop__description_3 {
+    margin-top: 130px;
+  }
+  .coop__description_2 {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .coop__description_3 {
+    margin-top: 40px;
+  }
+  .coop__description_2 {
+    margin-top: 60px;
+  }
+  .coop__women {
+    margin-left: 4px;
+  }
+}
+@media screen and (max-width: 364px) {
+  .coop__women {
+    margin-left: 6px;
+  }
+}
+@media screen and (max-width: 334px) {
+  .coop__women {
+    margin-left: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .coop__description_3 {
+    margin-top: 40px;
+  }
+  .coop__description_2 {
+    margin-top: 40px;
   }
 }/*# sourceMappingURL=index.css.map */
