@@ -26,15 +26,6 @@ h1, h2, h2, h3, h4, h5, h6, p, ul {
   margin: 0 auto;
 }
 
-.hamburger-menu {
-  display: none;
-}
-
-.line {
-  margin-top: 28px;
-  width: auto;
-}
-
 #menu__toggle {
   opacity: 0;
 }
@@ -58,9 +49,12 @@ h1, h2, h2, h3, h4, h5, h6, p, ul {
 }
 
 .menu__btn {
-  position: absolute;
-  top: 50px;
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 20px;
   width: 26px;
+  height: 26px;
   cursor: pointer;
   z-index: 1;
 }
@@ -72,7 +66,7 @@ h1, h2, h2, h3, h4, h5, h6, p, ul {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #616161;
   transition-duration: 0.25s;
 }
 
@@ -96,24 +90,25 @@ h1, h2, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #FFFFFF;
+  background-color: #ECEFF1;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  transition-duration: 0.4s;
+  transition-duration: 0.25s;
 }
 
 .menu__item {
+  text-align: center;
   display: block;
   padding: 12px 24px;
-  color: #000;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
   text-decoration: none;
   transition-duration: 0.25s;
 }
 
 .menu__item:hover {
-  background-color: gray;
+  background-color: #CFD8DC;
 }
 
 a {
@@ -284,6 +279,11 @@ button {
   border: none;
 }
 
+@media screen and (max-width: 496px) {
+  .menu__btn {
+    display: block;
+  }
+}
 .hero__title {
   margin-top: 97px;
   font-size: 36px;
@@ -578,9 +578,26 @@ button {
   font-size: 18px;
   color: #373737;
 }
+.contacts__more {
+  display: flex;
+  margin-top: 42px;
+}
+.contacts__arrow {
+  margin: 0px 21px 0px 21px;
+}
+.contacts__home {
+  font-weight: 400;
+  font-size: 16px;
+  color: #A7A7A7;
+}
 
 @media screen and (max-width: 1164px) {
   .contacts__content {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .contacts__more {
     justify-content: center;
   }
 }
@@ -626,10 +643,16 @@ header .glb .heart {
 .header__arrow {
   margin: 0px 21px 0px 21px;
 }
+.header__lupa {
+  display: none;
+}
 .header__home {
   font-weight: 400;
   font-size: 16px;
   color: #A7A7A7;
+}
+.header__lup {
+  margin-right: 23px;
 }
 
 .header__down {
@@ -667,6 +690,12 @@ header .glb .heart {
     justify-content: center;
   }
 }
+@media screen and (max-width: 1076px) {
+  .header__home {
+    font-size: 10px;
+    max-width: 111px;
+  }
+}
 @media screen and (max-width: 697px) {
   .header__more {
     display: flex;
@@ -698,6 +727,28 @@ header .glb .heart {
   .header__home {
     font-size: 10px;
     max-width: 111px;
+  }
+}
+@media screen and (max-width: 496px) {
+  .num {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+  .glb {
+    align-items: center;
+  }
+  .shop {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 496px) {
+  .header__lupa {
+    display: block;
+  }
+  .header__lup {
+    display: none;
   }
 }
 .order__content {

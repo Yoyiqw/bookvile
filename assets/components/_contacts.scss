@@ -75,11 +75,30 @@
         font-size: 18px;
         color: #373737;
     }
+    
+  &__more{
+    display: flex;
+    margin-top: 42px;
+  }
+  &__arrow{
+     margin: 0px 21px 0px 21px;
+  }
+  &__home{
+    @include font (400, 16px,  #A7A7A7)
+  }
 }
 
 @media screen and (max-width:1164px) {
     .contacts {
         &__content {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .contacts {
+        &__more{
             justify-content: center;
         }
     }

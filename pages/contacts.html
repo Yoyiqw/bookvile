@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,41 +8,60 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>Contacts</title>
 </head>
+
 <body>
     <main>
-        
+
         <header>
             <div class="container">
-                
-        <div class="header__row">
-                <div class="number">
-                    <a href="">
-                        <img src="../assets/icons/phone.svg" alt=""></a>
-                    <a href="">
-                        <div class="num">+7 999 140 00 00</div>
-                    </a>
-                </div>
-                <div class="header__logo">
-                    <a href=""> <img class="header__img" src="../assets/img/bookvile.png" alt=""></a>
 
+                <div class="header__row">
+                    <div class="number">
+                        <a href="">
+                            <img class="phone" src="../assets/icons/phone.svg" alt=""></a>
+                        <a href="">
+                            <div class="num">+7 999 140 00 00</div>
+                        </a>
+                    </div>
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="#">Подразделы</a></li>
+                            <li><a class="menu__item" href="#">О нас</a></li>
+                            <li><a class="menu__item" href="#">Мероприятия</a></li>
+                            <li><a class="menu__item" href="#">Блог</a></li>
+                            <li><a class="menu__item" href="#">Доставка и оплата</a></li>
+                            <li><a class="menu__item" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__lupa">
+                        <img src="../assets/icons/lupa.svg" alt="">
+                    </div>
+                    <div class="header__logo">
+                        <a href=""> <img class="header__img" src="../assets/img/bookvile.png" alt=""></a>
+
+                    </div>
+                    <div class="glb">
+                        <a href=""><img class="heart" src="../assets/icons/heart.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/lupa.svg" class="header__lup"></a>
+                        <a href=""><img class="shop" src="../assets/icons/shop.svg" alt=""></a>
+                    </div>
                 </div>
-                <div class="glb">
-                    <a href=""><img src="../assets/icons/heart.svg" alt=""></a>
-                    <a href=""><img src="../assets/icons/lupa.svg" class="heart"></a>
-                    <a href=""><img src="../assets/icons/shop.svg" alt=""></a>
+
+
+                <div class="contacts__more">
+                    <p class="contacts__home">Главная</p>
+                    <img class="contacts__arrow" src="../assets/icons/arrowLeft.svg" alt="">
+                    <p class="contacts__home">Контакты</p>
                 </div>
             </div>
-        
-        
-        <div class="header__more">
-            <p class="header__home">Главная</p>
-            <img class="header__arrow" src="../assets/icons/arrowLeft.svg" alt="">
-            <p class="header__home">Контакты</p>
-        </div>
-        </div>
-    </div>
-    </div>
-    </header>
+            </div>
+            </div>
+        </header>
         <section class="contacts">
             <div class="container">
                 <div class="contacts__content">
@@ -92,7 +112,8 @@
                             <li class="footer__info">Доставка и оплата</li>
                             <li class="footer__info">Блог</li>
                             <li class="footer__info">Контакты</li>
-                            <li class="footer__phone"><img class="footer__icon" src="./assets/icons/phone.svg" alt="">+7 999 140
+                            <li class="footer__phone"><img class="footer__icon" src="./assets/icons/phone.svg" alt="">+7
+                                999 140
                                 00 00</li>
                         </ul>
                     </div>
@@ -102,4 +123,5 @@
     </main>
 
 </body>
+
 </html>
