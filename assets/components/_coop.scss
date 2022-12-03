@@ -6,6 +6,7 @@
         font-weight: 300;
     }
     &__women{
+        width: 100%;
         margin-top: -80px;
     } 
     &__information{
@@ -26,6 +27,17 @@
         justify-content: space-between;
     }
 
+    &__fix{
+        width: 100%;
+    }
+    
+    &__fix_2{
+        width: 100%;
+    }
+    
+    &__fix_3{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:1206px) {
@@ -215,25 +227,6 @@
         &__description_2{
             margin-top: 60px;
         }
-        &__women{
-            margin-left: 4px;
-        }
-    }
-}
-
-@media screen and (max-width:364px) {
-    .coop {
-        &__women{
-            margin-left: 6px;
-        }
-    }
-}
-
-@media screen and (max-width:334px) {
-    .coop {
-        &__women{
-            margin-left: 16px;
-        }
     }
 }
 
@@ -244,6 +237,9 @@
         }
         &__description_2{
             margin-top: 40px;
+        }
+        &__woomen{
+            margin: 0;
         }
     }
 }
