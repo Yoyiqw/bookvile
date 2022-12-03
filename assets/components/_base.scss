@@ -46,8 +46,8 @@ h1,h2,h2,h3,h4,h5,h6,p,ul{
 }
 .menu__btn {
   display: none;
-  position: fixed;
-  top: 30px;
+  position: absolute;
+  top: 63px;
   left: 20px;
   width: 26px;
   height: 26px;
@@ -274,8 +274,19 @@ ul {
 button {
   border: none;
 }
+
+.hamburger-menu{
+  display: none;
+}
+
 @media screen and (max-width:496px) {
   .menu__btn{
+    display: block;
+  }
+}
+
+@media screen and (max-width:496px) {
+  .hamburger-menu{
     display: block;
   }
 }

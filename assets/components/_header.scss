@@ -28,7 +28,10 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #CDCDCD;
-    .menu__btn::before {
+    label.menu__btn::before {
+      content: none;
+    }
+    input[type=checkbox]:checked + label::before{
       content: none;
     }
   }
